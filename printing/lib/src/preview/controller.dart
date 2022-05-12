@@ -67,7 +67,7 @@ class PdfPreviewData extends ChangeNotifier {
   PdfPageFormat get actualPageFormat => _onComputeActualPageFormat();
 
   String get localPageFormat {
-    final locale = WidgetsBinding.instance!.window.locale;
+    final locale = WidgetsBinding.instance.window.locale;
     // ignore: unnecessary_cast
     final cc = (locale as Locale?)?.countryCode ?? 'US';
 
